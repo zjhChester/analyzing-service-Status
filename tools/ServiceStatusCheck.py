@@ -2,7 +2,7 @@ import os
 
 from py2neo import NodeMatcher, Graph
 
-from static_arch.neo_manage.NeoWriter import NeoWriter
+import tools.NeoWriter
 
 collection_keywords = [
     # 集合
