@@ -12,7 +12,7 @@
 
 
 ---
-### 使用：
-
+### 环境&使用：
+- Python3.8
 - 在`Executer.py`内,修改`dirPath`的路径
 - 执行main函数, 如果最终`CollectionsAnalysis.py/ObjectsAnalysis.py`里的`absoluteHasStatusVariables`有值， 则为有状态服务 
