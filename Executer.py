@@ -3,6 +3,7 @@ import os
 import javalang
 
 import analysis.CollectionsAnalysis as collectionsAnalysis
+import analysis.ObjectsAnalysis as objectsAnalysis
 
 javaFiles = []
 errorParseJavaFiles = []
@@ -33,8 +34,9 @@ def open_file(file_name):
 
 
 if __name__ == '__main__':
-    dirPath = r'/Users/jiahao.zhang/Documents/coding/on_boarding/ysg'  # r是转义，要不就用双斜杠
-    # dirPath = r'/Users/jiahao.zhang/Documents/coding/open-source/analyzing-service-status/javaFile'  # r是转义，要不就用双斜杠
+    # dirPath = r'/Users/jiahao.zhang/Documents/coding/on_boarding/ysg'  # r是转义，要不就用双斜杠
+    dirPath = r'/Users/jiahao.zhang/Documents/coding/open-source/analyzing-service-status/javaFile'  # r是转义，要不就用双斜杠
     dir_walk(dirPath)
     collectionsAnalysis.analysis(javaFiles)
+    objectsAnalysis.analysis(javaFiles)
     print("hello world")

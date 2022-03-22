@@ -20,7 +20,9 @@ import java.util.Objects;
 @Data
 @Builder
 @Repository
-public class TestCollections {
+public class TCollections {
     private final List<String> list = new ArrayList<>();
+    private final AccessObject accessObject;
+    public final AccessObject accessObject1;
     private Object testObject;
 }
